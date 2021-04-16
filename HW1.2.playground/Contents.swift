@@ -1,5 +1,4 @@
 import UIKit
-import Foundation
 
 //: # Home Work 2
 
@@ -34,7 +33,7 @@ print(sumResult)
  
  */
 let numberOne = 54
-let numberTwo = 12
+let numberTwo = 13
 
 let result = numberOne / numberTwo
 let remainder = numberOne % numberTwo
@@ -60,11 +59,29 @@ let dayOfBirth = 24
 let monthOfBirth = 2
 let yearOfBirth = 1993
 
-let currentDay = 15
+let currentDay = 16
 let currentMonth = 4
 let currentYear = 2021
 
+let totalDays = (currentDay - dayOfBirth) + ((currentMonth - monthOfBirth) * 30) + ((currentYear - yearOfBirth) * 360)
+let totalSeconds = totalDays * 24 * 60 * 60
+let totalMonths = totalDays / 30
+let totalYears = totalDays / 360
 
+print("\(totalYears) years, \(totalMonths) months, \(totalDays) days and \(totalSeconds) seconds have passed since my birth")
+
+//Задание 3.6
+if monthOfBirth <= 3 {
+    print("Я родилась в первом квартале")
+} else if monthOfBirth <= 6 {
+    print("Я родилась во втором квартале")
+}  else if monthOfBirth <= 9 {
+    print("Я родилась в третьем квартале")
+} else if monthOfBirth <= 12 {
+    print("Я родилась в четвертом квартале")
+} else {
+    print("Данные месяца введены неверно")
+}
 
 /*:
  ### Задание 4
