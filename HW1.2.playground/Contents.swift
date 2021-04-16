@@ -71,16 +71,16 @@ let totalYears = totalDays / 360
 print("\(totalYears) years, \(totalMonths) months, \(totalDays) days and \(totalSeconds) seconds have passed since my birth")
 
 //Задание 3.6
-if monthOfBirth <= 3 {
+if monthOfBirth <= 0 || monthOfBirth > 12 {
+    print("Данные месяца введены неверно")
+} else if monthOfBirth <= 3 {
     print("Я родилась в первом квартале")
 } else if monthOfBirth <= 6 {
     print("Я родилась во втором квартале")
 }  else if monthOfBirth <= 9 {
     print("Я родилась в третьем квартале")
-} else if monthOfBirth <= 12 {
-    print("Я родилась в четвертом квартале")
 } else {
-    print("Данные месяца введены неверно")
+    print("Я родилась в четвертом квартале")
 }
 
 /*:
